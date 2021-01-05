@@ -3,22 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Steven Wang - Web Developer</title>
+    <link rel="stylesheet" type="text/css" ref="src/libs/css/bootstrap.min.css">
+    <script type="text/javascript" src="src/libs/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="src/assets/img/logo.jpg" type="image/jpg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
-    <link rel="stylesheet" type="text/css" ref="src/libs/css/boostrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script type="text/javascript" src="src/libs/js/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="src/libs/js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="src/js/javascript.js">
-    </script>
   </head>
   <body>
     <!-- Navigation Bar -->
-    <header class="navbar" id="navbar">
-      <nav class="navbar__container">
+    <header class="topnavbar" id="topnavbar">
+      <nav class="topnavbar__container navbar navbar-expand-lg navbar-light bg-light">
         <div class="site__logo">
           <div class="logo__wcrown">
             <div class="logo__wcrown--top">
@@ -34,17 +31,19 @@
             S
           </div>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="navbar__menu collapse navbar-collapse" id="navbarSupportedContent">
-          <a href="#home" class="navbar__menuitems" id="homepage" data-id="1"><li>Home</li></a>
-          <a href="#about" class="navbar__menuitems" id="aboutpage" data-id="2"><li>About</li></a>
-          <a href="#resume" class="navbar__menuitems" id="resumepage" data-id="3"><li>Resume</li></a>
-          <a href="#projects" class="navbar__menuitems" id="projectspage" data-id="4"><li>Projects</li></a>
-          <a href="#contact" class="navbar__menuitems" id="contactpage" data-id="5"><li>Contact</li></a>
-          <a href="#blog" class="navbar__menuitems" id="blogpage" data-id="6"><li>Blog</li></a>
-        </ul>
+        <div class="collapse navbar-collapse" id="mobileNavbar">
+          <ul class="topnavbar__menu">
+            <a href="#home" class="topnavbar__menuitems" id="homepage" data-id="1"><li>Home</li></a>
+            <a href="#about" class="topnavbar__menuitems" id="aboutpage" data-id="2"><li>About</li></a>
+            <a href="#resume" class="topnavbar__menuitems" id="resumepage" data-id="3"><li>Resume</li></a>
+            <a href="#projects" class="topnavbar__menuitems" id="projectspage" data-id="4"><li>Projects</li></a>
+            <a href="#contact" class="topnavbar__menuitems" id="contactpage" data-id="5"><li>Contact</li></a>
+            <a href="#blog" class="topnavbar__menuitems" id="blogpage" data-id="6"><li>Blog</li></a>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -544,11 +543,8 @@
       © 2021 All copy rights reserved. Developed by &nbsp;<span><a href="https://skykk0128.github.io/Project_1/">Steven Wang</a></span>
     </footer>
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script type="text/javascript" src="src/libs/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="src/libs/js/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="src/libs/js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="src/js/javascript.js">
     </script>
   </body>

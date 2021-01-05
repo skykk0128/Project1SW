@@ -39,7 +39,7 @@ footer > span > a:visited {
   box-shadow: 0 10px 10px 0 rgba(211, 211, 211, 0.5), 0 10px 10px 0 rgba(211, 211, 211, 0.5);
 }
 
-.navbar {
+.topnavbar {
   width: 100%;
   top: 0;
   left: 0;
@@ -50,14 +50,14 @@ footer > span > a:visited {
   justify-content: space-between;
   align-items: center;
 }
-.navbar__container {
+.topnavbar__container {
   width: 1024px;
   justify-content: space-between;
   align-items: center;
   display: flex;
   margin: auto;
 }
-.navbar .site__logo {
+.topnavbar .site__logo {
   width: 50px;
   margin-left: 20px;
   display: flex;
@@ -65,39 +65,39 @@ footer > span > a:visited {
   align-items: center;
   transition: transform 0.5s;
 }
-.navbar .site__logo:hover {
+.topnavbar .site__logo:hover {
   transform: scale(1.1);
 }
-.navbar .logo__wcrown {
+.topnavbar .logo__wcrown {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.navbar .logo__wcrown--top {
+.topnavbar .logo__wcrown--top {
   display: flex;
 }
-.navbar .logo__top {
+.topnavbar .logo__top {
   border-top: solid 15px transparent;
   border-left: solid 10px #2eca7f;
   border-right: solid 10px #2eca7f;
 }
-.navbar .logo__wcrown--bottom {
+.topnavbar .logo__wcrown--bottom {
   height: 5px;
   background-color: #2eca7f;
   width: 40px;
 }
-.navbar .logo__s {
+.topnavbar .logo__s {
   font-family: "Lobster", cursive;
   color: #2eca7f;
   font-size: 25px;
 }
-.navbar__menu {
+.topnavbar__menu {
   width: 500px;
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
 }
-.navbar__menuitems {
+.topnavbar__menuitems {
   display: inline-block;
   text-decoration: none;
   color: #999999;
@@ -107,10 +107,10 @@ footer > span > a:visited {
   padding: 8px 0px;
   margin: 0px 20px;
 }
-.navbar__menuitems:hover {
+.topnavbar__menuitems:hover {
   color: #49515d;
 }
-.navbar__menuitems::after {
+.topnavbar__menuitems::after {
   content: "";
   margin: auto;
   width: 0px;
@@ -119,10 +119,10 @@ footer > span > a:visited {
   background: #2eca7f;
   transition: 0.5s;
 }
-.navbar__menuitems:hover::after {
+.topnavbar__menuitems:hover::after {
   width: 50%;
 }
-.navbar .current {
+.topnavbar .current {
   color: #49515d;
 }
 

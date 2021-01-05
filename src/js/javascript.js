@@ -2,7 +2,7 @@
 
 // Highlight menu item when navigating
 document.getElementById("homepage").addEventListener("click", event => {
-  
+
   document.getElementById("homepage").classList.add("current");
   document.getElementById("aboutpage").classList.remove("current");
   document.getElementById("resumepage").classList.remove("current");
@@ -62,7 +62,7 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 // Sticky Navigation Bar
-var navbar = document.getElementById("navbar");
+var navbar = document.getElementById("topnavbar");
 var sticky = navbar.offsetTop;
 window.onscroll = () => {
   if (window.pageYOffset >= sticky) {
