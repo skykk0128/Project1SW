@@ -13,7 +13,6 @@ document.getElementById("homepage").addEventListener("click", event => {
 document.getElementById("aboutpage").addEventListener("click", event => {
   document.getElementById("homepage").classList.remove("current");
   document.getElementById("aboutpage").classList.add("current");
-  document.getElementById("aboutpage").classList.add("active");
   document.getElementById("resumepage").classList.remove("current");
   document.getElementById("projectspage").classList.remove("current");
   document.getElementById("contactpage").classList.remove("current");
@@ -62,12 +61,34 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 // Sticky Navigation Bar
-// var navbar = document.getElementById("topnavbar");
-// var sticky = navbar.offsetTop;
-// window.onscroll = () => {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky");
-//   } else {
-//     navbar.classList.remove("sticky");
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+window.onscroll = () => {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+};
+// $(document).ready(function() {
+//   var start = 0;
+//   var navbar = $('#navbar');
+//   var offset = navbar.offset();
+//   if (navbar.length) {
+//     $(document).scroll(function() {
+//       start = $(document).scrollTop();
+//       if (start > offset.top) {
+//         $('#navbar').css('background-color', '#ffffff');
+//       }
+//     } else {
+//       $('#navbar').css('background-color', 'transparent');
+//     }
 //   }
-// };
+// });
+
+
+
+
+$(window).load(function() {
+  $('#loading').hide();
+});

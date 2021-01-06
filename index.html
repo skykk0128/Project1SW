@@ -14,56 +14,62 @@
 
   </head>
   <body>
+
+    <div class="spinner-grow text-success" role="status" id="loading">
+      <span class="sr-only">Loading...</span>
+    </div>
     <!-- Navigation Bar -->
-    <header class="topnavbar navbar-fixed-top" id="topnavbar">
-      <nav class="topnavbar__container navbar navbar-expand-lg navbar-light navbar-fixed-top">
-        <div class="site__logo">
-          <div class="logo__wcrown">
-            <div class="logo__wcrown--top">
-              <div class="logo__top">
+    <header class="topnavbar">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+        <div class="topnavbar__container">
+          <div class="navbar-brand site__logo">
+            <div class="logo__wcrown">
+              <div class="logo__wcrown--top">
+                <div class="logo__top">
+                </div>
+                <div class="logo__top">
+                </div>
               </div>
-              <div class="logo__top">
+              <div class="logo__wcrown--bottom">
               </div>
             </div>
-            <div class="logo__wcrown--bottom">
+            <div class="logo__s">
+              S
             </div>
           </div>
-          <div class="logo__s">
-            S
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mobileNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mobileNavbar">
+            <ul class="topnavbar__menu navbar-nav">
+              <li class="nav-item active"><a href="#home" class="topnavbar__menuitems nav-link" id="homepage" data-id="1">Home</a></li>
+              <li class="nav-item"><a href="#about" class="topnavbar__menuitems nav-link" id="aboutpage" data-id="2">About</a></li>
+              <li class="nav-item"><a href="#resume" class="topnavbar__menuitems nav-link" id="resumepage" data-id="3">Resume</a></li>
+              <li class="nav-item"><a href="#projects" class="topnavbar__menuitems nav-link" id="projectspage" data-id="4">Projects</a></li>
+              <li class="nav-item"><a href="#contact" class="topnavbar__menuitems nav-link" id="contactpage" data-id="5">Contact</a></li>
+              <li class="nav-item"><a href="#blog" class="topnavbar__menuitems nav-link" id="blogpage" data-id="6">Blog</a></li>
+            </ul>
           </div>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mobileNavbar">
-          <ul class="topnavbar__menu">
-            <a href="#home" class="topnavbar__menuitems" id="homepage" data-id="1"><li>Home</li></a>
-            <a href="#about" class="topnavbar__menuitems" id="aboutpage" data-id="2"><li>About</li></a>
-            <a href="#resume" class="topnavbar__menuitems" id="resumepage" data-id="3"><li>Resume</li></a>
-            <a href="#projects" class="topnavbar__menuitems" id="projectspage" data-id="4"><li>Projects</li></a>
-            <a href="#contact" class="topnavbar__menuitems" id="contactpage" data-id="5"><li>Contact</li></a>
-            <a href="#blog" class="topnavbar__menuitems" id="blogpage" data-id="6"><li>Blog</li></a>
-          </ul>
         </div>
       </nav>
     </header>
 
     <main>
       <!-- About Page -->
-      <section class="about" id="about">
+      <section class="section about" id="about">
         <div class="titlebanner">
           <h1>About Me</h1>
         </div>
         <div class="about__introduction">
           <p class="about__about">
             I am an enthusiastic programmer who enjoys troubleshooting, and keen to develop trouble-free web applications,
-            monitor current web applications and provide stunning websites to support the company vision and objective.
+            monitor current web applications and provide stunning websites to support the company vision and objective, where I also build my professional communication skills, teamwork skills and problem-solving and analytical skills..
           </p>
         </div>
       </section>
 
       <!-- Resume Page -->
-      <section class="resume" id="resume">
+      <section class="section resume" id="resume">
         <div class="titlebanner">
           <h1>My Resume</h1>
         </div>
@@ -384,14 +390,14 @@
       </section>
 
       <!-- Projects Page -->
-      <section class="projects" id="projects">
+      <section class="section projects" id="projects">
         <div class="titlebanner">
           <h1>My Projects</h1>
         </div>
       </section>
 
       <!-- Contact Page -->
-      <section class="contact" id="contact">
+      <section class="section contact" id="contact">
         <div class="titlebanner">
           <h1>Contact Me</h1>
         </div>
@@ -459,7 +465,7 @@
       </section>
 
       <!-- Blog Page -->
-      <section class="blog" id="blog">
+      <section class="section blog" id="blog">
         <div class="titlebanner">
           <h1>My Blogs</h1>
         </div>
@@ -475,22 +481,17 @@
 
       <!-- Main Page -->
       <!-- this page must be placed at last for the css to work -->
-      <section class="main default" id="home">
-        <div class="main__introduction">
-          <div class="main__photo">
+      <section class="section main col-lg-12 default" id="home">
+        <div class="main__introduction col-lg-12">
+          <div class="main__frame col-lg-6">
+            <div class="main__photo">
+            </div>
           </div>
-          <div class="main__frame">
-          </div>
-          <div class="main__about">
-            <h2>About Me</h2>
-            <p>I am a current IT student with experience in HTML5, CSS3, JavaScript (Vanilla, ES6), Java, WordPress and Shopify Ruby on Rails as a full stack web developer,
-               where I also build my professional communication skills, teamwork skills and problem-solving and analytical skills.
-            </p>
-          </div>
-        </div>
-        <div class="main__details">
-          <div class="main__info">
-            <h1>Shikai Wang (Steven)</h1>
+          <div class="main__info col-lg-6">
+            <h1>Shikai Wang</h1>
+            <div class="main__name">
+              (Steven)
+            </div>
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -508,34 +509,27 @@
               <a href="https://twitter.com/Shikai_Steven"><li><img src="src/assets/icon/twitter.svg" alt="twitter" class="main__icon"></li></a>
             </ul>
           </div>
-          <div class="main__briefing">
-            <table class="main__table">
-              <tr>
-                <th>Age:</th>
-                <td></td>
-                <td>27</td>
-              </tr>
-              <tr>
-                <th>Residence:</th>
-                <td></td>
-                <td>Australia</td>
-              </tr>
-              <tr>
-                <th>Address:</th>
-                <td></td>
-                <td>838 Collins Street, Docklands VIC 3008</td>
-              </tr>
-              <tr>
-                <th>Email:</th>
-                <td></td>
-                <td><a href="mailto:steven93.wang@gmail.com">steven93.wang@gmail.com</a></td>
-              </tr>
-              <tr>
-                <th>Phone:</th>
-                <td></td>
-                <td>0426119788</td>
-              </tr>
-            </table>
+        </div>
+        <div class="main__details col-lg-12">
+          <div class="main__about col-lg-6">
+            <h3>About <span>Me</span></h3>
+            <p>
+              I am a current IT student with experience in HTML5, CSS3, JavaScript (Vanilla, ES6), Java, WordPress and Shopify Ruby on Rails as a full stack web developer.
+            </p>
+          </div>
+          <div class="main__briefing col-lg-6">
+            <dl>
+              <dt>Age:</dt>
+              <dd>27</dd>
+              <dt>Residence:</dt>
+              <dd>Australia</dd>
+              <dt>Address:</dt>
+              <dd>838 Collins Street, Docklands VIC 3008</dd>
+              <dt>Email:</dt>
+              <dd><a href="mailto:steven93.wang@gmail.com">steven93.wang@gmail.com</a></dd>
+              <dt>Phone:</dt>
+              <dd>0426119788</dd>
+            </dl>
           </div>
         </div>
       </section>
