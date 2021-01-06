@@ -62,12 +62,12 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 // Sticky Navigation Bar
-var navbar = document.getElementById("topnavbar");
-var sticky = navbar.offsetTop;
-window.onscroll = () => {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-};
+// var navbar = document.getElementById("topnavbar");
+// var sticky = navbar.offsetTop;
+// window.onscroll = () => {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky");
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// };
