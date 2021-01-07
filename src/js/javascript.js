@@ -64,7 +64,7 @@ var swiper = new Swiper('.swiper-container', {
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 window.onscroll = () => {
-  if (window.pageYOffset >= sticky) {
+  if (window.pageYOffset >= sticky+10) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");

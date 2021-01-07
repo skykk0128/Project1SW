@@ -1,6 +1,7 @@
 $fontFamilyLogo: 'Lobster', cursive;
 $fontFamily: 'Roboto', Helvetica, sans-serif;
 $themeColor: #2eca7f;
+$togglerColor: white;
 $LG: 1366px;
 $MD: 1024px;
 $SM: 768px;
@@ -8,17 +9,17 @@ $XS: 414px;
 
 @mixin MQ($canvas) {
   @if $canvas==SM {
-    @media screen and (max-width: $SM -16) {
+    @media only screen and (max-width: $SM -16) {
       @content;
     }
   }
   @else if $canvas==MD {
-    @media screen and (min-width: $SM) and (max-width: $L - 16) {
+    @media only screen and (min-width: $SM) and (max-width: $MD - 16) {
       @content;
     }
   }
   @else if $canvas==LG {
-    @media screen and (min-width: $L) {
+    @media only screen and (min-width: $MD) {
       @content;
     }
   }
@@ -56,12 +57,50 @@ footer > span > a:hover {
 }
 .sticky {
   position: fixed;
+  height: 70px;
   top: 0;
-  background-color: white;
   box-shadow: 0 10px 10px 0 rgba(211, 211, 211, 0.5);
 }
 .topnavbar {
-  background-color: #f5f5f5;
+  @include MQ(LG) {
+    background-color: $themeColor;
+  }
+  @include MQ(MD) {
+    background-color: $themeColor;
+    .logo__top {
+      border-top: solid 15px transparent;
+      border-left: solid 10px $togglerColor;
+      border-right: solid 10px $togglerColor;
+    }
+    .logo__wcrown--bottom {
+      height: 5px;
+      background-color: $togglerColor;
+      width: 40px;
+    }
+    .logo__s {
+      font-family: $fontFamilyLogo;
+      color: $togglerColor;
+      font-size: 25px;
+    }
+  }
+  @include MQ(SM) {
+    background-color: $themeColor;
+    .logo__top {
+      border-top: solid 15px transparent;
+      border-left: solid 10px $togglerColor;
+      border-right: solid 10px $togglerColor;
+    }
+    .logo__wcrown--bottom {
+      height: 5px;
+      background-color: $togglerColor;
+      width: 40px;
+    }
+    .logo__s {
+      font-family: $fontFamilyLogo;
+      color: $togglerColor;
+      font-size: 25px;
+    }
+  }
   &__container {
     width: 75%;
     display: flex;
@@ -97,7 +136,7 @@ footer > span > a:hover {
   }
   .logo__s {
     font-family: $fontFamilyLogo;
-    color: #2eca7f;
+    color: $themeColor;
     font-size: 25px;
   }
   &__menu {
@@ -153,7 +192,6 @@ footer > span > a:hover {
   }
   display: none;
   &__introduction {
-    height: 300px;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -161,7 +199,7 @@ footer > span > a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: $themeColor;
-    padding: 50px;
+    padding: 50px 50px 0px 30px;
     margin-bottom: 25px;
     position: relative;
   }
@@ -177,7 +215,6 @@ footer > span > a:hover {
     justify-content: center;
   }
   &__photo {
-    position: absolute;
     height: 275px;
     width: 275px;
     outline: solid 3px white;
@@ -224,11 +261,12 @@ footer > span > a:hover {
     align-items: center;
   }
   &__info {
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: solid 2px black;
+    padding: 0;
   }
   &__name {
     font-size: 40px;
@@ -237,7 +275,7 @@ footer > span > a:hover {
   }
   h1 {
     font-weight: bolder;
-    margin: 0;
+    margin: 10px 0px 0px 0px;
     padding: 0;
   }
   h3 {
@@ -345,7 +383,7 @@ footer > span > a:hover {
     border-left: solid 3px lightgrey;
   }
   &__education--card {
-    width: 400px;
+    width: 100%;
     padding: 15px;
     margin-bottom: 20px;
     display: flex;
@@ -392,7 +430,7 @@ footer > span > a:hover {
     border-left: solid 3px lightgrey;
   }
   &__work--card {
-    width: 400px;
+    width: 100%;
     padding: 15px;
     margin-bottom: 20px;
     display: flex;
@@ -422,7 +460,7 @@ footer > span > a:hover {
   }
   &__skill--bar {
     height: 10px;
-    width: 350px;
+    width: 100%;
     position: relative;
     background: lightgrey;
     overflow: hidden;

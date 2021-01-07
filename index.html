@@ -20,7 +20,7 @@
     </div>
     <!-- Navigation Bar -->
     <header class="topnavbar">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
         <div class="topnavbar__container">
           <div class="navbar-brand site__logo">
             <div class="logo__wcrown">
@@ -42,7 +42,7 @@
           </button>
           <div class="collapse navbar-collapse" id="mobileNavbar">
             <ul class="topnavbar__menu navbar-nav">
-              <li class="nav-item active"><a href="#home" class="topnavbar__menuitems nav-link" id="homepage" data-id="1">Home</a></li>
+              <li class="nav-item"><a href="#home" class="topnavbar__menuitems nav-link" id="homepage" data-id="1">Home</a></li>
               <li class="nav-item"><a href="#about" class="topnavbar__menuitems nav-link" id="aboutpage" data-id="2">About</a></li>
               <li class="nav-item"><a href="#resume" class="topnavbar__menuitems nav-link" id="resumepage" data-id="3">Resume</a></li>
               <li class="nav-item"><a href="#projects" class="topnavbar__menuitems nav-link" id="projectspage" data-id="4">Projects</a></li>
@@ -56,7 +56,7 @@
 
     <main>
       <!-- About Page -->
-      <section class="section about" id="about">
+      <section class="section about col-lg-12" id="about">
         <div class="titlebanner">
           <h1>About Me</h1>
         </div>
@@ -69,16 +69,18 @@
       </section>
 
       <!-- Resume Page -->
-      <section class="section resume" id="resume">
+      <section class="section resume col-lg-12" id="resume">
         <div class="titlebanner">
           <h1>My Resume</h1>
         </div>
-        <div class="resume__content">
-          <div class="resume__pastexperience">
+        <div class="resume__content col-lg-12">
+          <div class="resume__pastexperience col-lg-6">
 
             <!-- Education -->
             <div class="resume__education">
-              <h2>Education</h2>
+              <div class="section__header">
+                <h2>Education</h2>
+              </div>
               <div class="resume__education--container resume__topitems">
                 <div class="resume__bullet">
                 </div>
@@ -128,7 +130,7 @@
                   </div>
                   <h4>Special Interests:</h4>
                   <div class="resume__education--focusedarea">
-                    Java, C#, .NET Framework
+                    Java, C#, ASP.NET Framework, Mobile Development
                   </div>
                 </div>
               </div>
@@ -163,7 +165,9 @@
 
             <!-- Work Experience -->
             <div class="resume__work">
-              <h2>Work Experience</h2>
+              <div class="section__header">
+                <h2>Experience</h2>
+              </div>
               <div class="resume__work--container resume__topitems">
                 <div class="resume__bullet">
                 </div>
@@ -251,10 +255,13 @@
               </div>
             </div>
           </div>
-          <div class="resume__services">
+
+          <div class="resume__services col-lg-6">
             <!-- Coding Skills -->
             <div class="resume__coding">
-              <h2>Coding <span>Skills</span></h2>
+              <div class="section__header">
+                <h2>Coding <span>Skills</span></h2>
+              </div>
               <div class="resume__skill">
                 <div class="resume__skill--container">
                   <div class="resume__skill--text">
@@ -309,7 +316,9 @@
 
             <!-- Design Skills -->
             <div class="resume__design">
-              <h2>Design <span>Skills</span></h2>
+              <div class="section__header">
+                <h2>Design <span>Skills</span></h2>
+              </div>
               <div class="resume__skill">
                 <div class="resume__skill--container">
                   <div class="resume__skill--text">
@@ -348,7 +357,9 @@
 
             <!-- Other Skills -->
             <div class="resume__other">
-              <h2>Other <span>Skills</span></h2>
+              <div class="section__header">
+                <h2>Other <span>Skills</span></h2>
+              </div>
               <div class="resume__skill">
                 <div class="resume__skill--container">
                   <div class="resume__skill--text">
@@ -390,14 +401,14 @@
       </section>
 
       <!-- Projects Page -->
-      <section class="section projects" id="projects">
+      <section class="section projects col-lg-12" id="projects">
         <div class="titlebanner">
           <h1>My Projects</h1>
         </div>
       </section>
 
       <!-- Contact Page -->
-      <section class="section contact" id="contact">
+      <section class="section contact col-lg-12" id="contact">
         <div class="titlebanner">
           <h1>Contact Me</h1>
         </div>
@@ -465,7 +476,7 @@
       </section>
 
       <!-- Blog Page -->
-      <section class="section blog" id="blog">
+      <section class="section blog col-lg-12" id="blog">
         <div class="titlebanner">
           <h1>My Blogs</h1>
         </div>
