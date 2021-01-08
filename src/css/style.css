@@ -1,5 +1,6 @@
-h1, h2 {
+h1 {
   color: white;
+  font-weight: bolder;
 }
 
 body {
@@ -10,10 +11,6 @@ body {
 
 p {
   font-size: 20px;
-}
-
-h2, h3 > span {
-  color: #2eca7f;
 }
 
 footer {
@@ -263,6 +260,9 @@ footer > span > a:hover {
   color: #212121;
   font-weight: bold;
 }
+.main h3 > span {
+  color: #2eca7f;
+}
 .main p {
   color: #424242;
   margin-bottom: 0;
@@ -295,7 +295,7 @@ footer > span > a:hover {
   display: block;
   float: left;
   width: 100px;
-  color: 424242;
+  color: #424242;
 }
 .main dd {
   width: 400px;
@@ -356,6 +356,14 @@ footer > span > a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+.resume h3 {
+  color: #212121;
+  font-weight: bolder;
+}
+.resume h3 > span {
+  color: #2eca7f;
+  font-weight: bolder;
 }
 .resume h4 {
   margin-top: 5px;
@@ -528,8 +536,13 @@ footer > span > a:hover {
   justify-content: space-between;
   border: solid 2px blue;
 }
-.contact__map {
-  width: 300px;
+.contact h3 {
+  color: #212121;
+  font-weight: bolder;
+}
+.contact h3 > span {
+  color: #2eca7f;
+  font-weight: bolder;
 }
 .contact__icon {
   width: 40px;
