@@ -340,6 +340,177 @@ footer > span > a:hover {
   display: none;
   border: solid 2px blue;
 }
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  &__container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  &__topitems {
+    padding-top: 20px;
+  }
+  // can use before and after
+  &__bullet {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+    margin-left: -10px;
+    border: solid $themeColor;
+    border-radius: 100px;
+  }
+  &__line {
+    width: 20px;
+    height: 3px;
+    margin-top: 17px;
+    background-color: $themeColor;
+  }
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  h3 {
+    color: $titleColor;
+    font-weight: bolder;
+  }
+  h3 > span {
+    color: $themeColor;
+    font-weight: bolder;
+  }
+  h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  &__sectioncontainer {
+    display: flex;
+    justify-content: flex-start;
+    border-left: solid 3px lightgrey;
+  }
+  &__card {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: solid 3px $themeColor;
+    border-right: solid 1px lightgrey;
+    border-top: solid 1px lightgrey;
+    border-bottom: solid 1px lightgrey;
+    box-shadow: 0 10px 10px 0 rgba(211, 211, 211, 0.3), 0 10px 10px 0 rgba(211, 211, 211, 0.3);
+  }
+  &__card:hover {
+    box-shadow: 0 10px 10px 0 rgba(211, 211, 211, 0.7), 0 10px 10px 0 rgba(211, 211, 211, 0.7);
+  }
+  &__title {
+    font-weight: bolder;
+  }
+  &__yearandplace {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__separator {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  &__year {
+    color: $themeColor;
+  }
+  &__place {
+    color: $themeColor;
+  }
+  &__responsibilities {
+    margin: 0;
+    padding-left: 15px;
+  }
+}
+
+
+
+// &__services {
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: wrap;
+//   padding: 40px;
+//   justify-content: space-between;
+// }
+// &__coding {
+//   position: relative;
+// }
+// &__skill--bar {
+//   height: 10px;
+//   width: 100%;
+//   position: relative;
+//   background: lightgrey;
+//   overflow: hidden;
+// }
+// &__skill--bar span {
+//   display: block;
+//   height: 100%;
+// }
+// &__skill--container {
+//   margin-bottom: 20px;
+// }
+// &__progress--html {
+//   width: 95%;
+// }
+// &__progress--css {
+//   width: 85%;
+// }
+// &__progress--js {
+//   width: 75%;
+// }
+// &__progress--java {
+//   width: 90%;
+// }
+// &__progress--php {
+//   width: 60%;
+// }
+// &__progress--csharp {
+//   width: 65%;
+// }
+// &__progress--inner {
+//   background-color: $themeColor;
+//   -webkit-animation: progressBar 3s ease-in-out;
+//   -webkit-animation-fill-mode:both;
+//   -moz-animation: progressBar 3s ease-in-out;
+//   -moz-animation-fill-mode:both;
+// }
+// &__design {
+//   position: relative;
+//   margin-top: 30px;
+// }
+// &__progress--wordpress {
+//   width: 85%;
+// }
+// &__progress--shopify {
+//   width: 75%;
+// }
+// &__progress--moodle {
+//   width: 75%;
+// }
+// &__progress--graphic {
+//   width: 80%;
+// }
+// &__other {
+//   margin-bottom: 10px;
+// }
+// &__progress--git {
+//   width: 85%;
+// }
+// &__progress--troubleshooting {
+//   width: 85%;
+// }
+// &__progress--teamwork {
+//   width: 95%;
+// }
+// &__progress--communication {
+//   width: 80%;
+// }
 .resume {
   display: none;
   &__content {
@@ -437,7 +608,7 @@ footer > span > a:hover {
   }
   &__work--container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     border-left: solid 3px lightgrey;
   }
   &__work--card {
@@ -542,7 +713,6 @@ footer > span > a:hover {
 }
 .projects {
   display: none;
-  border: solid 2px blue;
 }
 .contact {
   display: none;
@@ -551,6 +721,7 @@ footer > span > a:hover {
   &__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     border: solid 2px blue;
   }
   h3 {
@@ -565,7 +736,7 @@ footer > span > a:hover {
 
   }
   &__map {
-    
+
   }
   &__icontable {
 

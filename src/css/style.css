@@ -321,6 +321,94 @@ footer > span > a:hover {
   border: solid 2px blue;
 }
 
+.details {
+  display: flex;
+  flex-wrap: wrap;
+}
+.details__container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: 40px;
+}
+.details__topitems {
+  padding-top: 20px;
+}
+.details__bullet {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+  margin-left: -10px;
+  border: solid #2eca7f;
+  border-radius: 100px;
+}
+.details__line {
+  width: 20px;
+  height: 3px;
+  margin-top: 17px;
+  background-color: #2eca7f;
+}
+.details__section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.details h3 {
+  color: #212121;
+  font-weight: bolder;
+}
+.details h3 > span {
+  color: #2eca7f;
+  font-weight: bolder;
+}
+.details h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.details__sectioncontainer {
+  display: flex;
+  justify-content: flex-start;
+  border-left: solid 3px lightgrey;
+}
+.details__card {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: solid 3px #2eca7f;
+  border-right: solid 1px lightgrey;
+  border-top: solid 1px lightgrey;
+  border-bottom: solid 1px lightgrey;
+  box-shadow: 0 10px 10px 0 rgba(211, 211, 211, 0.3), 0 10px 10px 0 rgba(211, 211, 211, 0.3);
+}
+.details__card:hover {
+  box-shadow: 0 10px 10px 0 rgba(211, 211, 211, 0.7), 0 10px 10px 0 rgba(211, 211, 211, 0.7);
+}
+.details__title {
+  font-weight: bolder;
+}
+.details__yearandplace {
+  display: flex;
+  justify-content: space-between;
+}
+.details__separator {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.details__year {
+  color: #2eca7f;
+}
+.details__place {
+  color: #2eca7f;
+}
+.details__responsibilities {
+  margin: 0;
+  padding-left: 15px;
+}
+
 .resume {
   display: none;
 }
@@ -418,7 +506,7 @@ footer > span > a:hover {
 }
 .resume__work--container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   border-left: solid 3px lightgrey;
 }
 .resume__work--card {
@@ -523,7 +611,6 @@ footer > span > a:hover {
 
 .projects {
   display: none;
-  border: solid 2px blue;
 }
 
 .contact {
@@ -534,6 +621,7 @@ footer > span > a:hover {
 .contact__container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   border: solid 2px blue;
 }
 .contact h3 {
