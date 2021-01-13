@@ -1,54 +1,18 @@
 'use strict';
 
-// Highlight menu item when navigating
-document.getElementById("homepage").addEventListener("click", event => {
-
-  document.getElementById("homepage").classList.add("current");
-  document.getElementById("aboutpage").classList.remove("current");
-  document.getElementById("resumepage").classList.remove("current");
-  document.getElementById("projectspage").classList.remove("current");
-  document.getElementById("contactpage").classList.remove("current");
-  document.getElementById("blogpage").classList.remove("current");
-});
-document.getElementById("aboutpage").addEventListener("click", event => {
-  document.getElementById("homepage").classList.remove("current");
-  document.getElementById("aboutpage").classList.add("current");
-  document.getElementById("resumepage").classList.remove("current");
-  document.getElementById("projectspage").classList.remove("current");
-  document.getElementById("contactpage").classList.remove("current");
-  document.getElementById("blogpage").classList.remove("current");
-});
-document.getElementById("resumepage").addEventListener("click", event => {
-  document.getElementById("homepage").classList.remove("current");
-  document.getElementById("aboutpage").classList.remove("current");
-  document.getElementById("resumepage").classList.add("current");
-  document.getElementById("projectspage").classList.remove("current");
-  document.getElementById("contactpage").classList.remove("current");
-  document.getElementById("blogpage").classList.remove("current");
-});
-document.getElementById("projectspage").addEventListener("click", event => {
-  document.getElementById("homepage").classList.remove("current");
-  document.getElementById("aboutpage").classList.remove("current");
-  document.getElementById("resumepage").classList.remove("current");
-  document.getElementById("projectspage").classList.add("current");
-  document.getElementById("contactpage").classList.remove("current");
-  document.getElementById("blogpage").classList.remove("current");
-});
-document.getElementById("contactpage").addEventListener("click", event => {
-  document.getElementById("homepage").classList.remove("current");
-  document.getElementById("aboutpage").classList.remove("current");
-  document.getElementById("resumepage").classList.remove("current");
-  document.getElementById("projectspage").classList.remove("current");
-  document.getElementById("contactpage").classList.add("current");
-  document.getElementById("blogpage").classList.remove("current");
-});
-document.getElementById("blogpage").addEventListener("click", event => {
-  document.getElementById("homepage").classList.remove("current");
-  document.getElementById("aboutpage").classList.remove("current");
-  document.getElementById("resumepage").classList.remove("current");
-  document.getElementById("projectspage").classList.remove("current");
-  document.getElementById("contactpage").classList.remove("current");
-  document.getElementById("blogpage").classList.add("current");
+function switchPage(clicked) {
+  const pages = ["homepage", "aboutpage", "resumepage", "projectspage", "contactpage", "blogpage"];
+  document.getElementById(clickedPage).classList.add("current");
+  pages.filter(page => page !== clickedPage).forEach(page => {
+    document.getElementById(page).classList.remove("current");
+  })
+}
+document.querySelectorAll("nav-item").addEventListener("click", event => {
+  const pages = ["homepage", "aboutpage", "resumepage", "projectspage", "contactpage", "blogpage"];
+  pages.forEach(page => {
+    document.getElementById(page).classList.remove("current");
+  });
+  document.getElementById(page).classList.add("current");
 });
 
 // Changeable Position
@@ -99,6 +63,20 @@ window.onscroll = () => {
     var to = d.getElementsByTagName('script')[0];
     to.parentNode.insertBefore(s, to);
 })();
+
+
+(function () {
+    var setting = {"height":300,"width":300,"zoom":20,"queryString":"41 Rosstown Road, Carnegie VIC, Australia","place_id":"ChIJ8cNe5CNq1moRDCtfUmq_Qew","satellite":false,"centerCoord":[-37.8852610123559,145.05521695000004],"cid":"0xec41bf6a525f2b0c","lang":"en","cityUrl":"/australia/melbourne","cityAnchorText":"Map of Melbourne, Victoria, Australia","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"348914"};
+    var d = document;
+    var s = d.createElement('script');
+    s.src = 'https://1map.com/js/script-for-user.js?embed_id=348914';
+    s.async = true;
+    s.onload = function (e) {
+      window.OneMap.initMap(setting)
+    };
+    var to = d.getElementsByTagName('script')[0];
+    to.parentNode.insertBefore(s, to);
+  })();
 
 
 $(window).load(function() {
